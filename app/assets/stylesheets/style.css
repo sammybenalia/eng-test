@@ -1,0 +1,19 @@
+.navigationbar{
+	border-top-style:solid;
+	border-width: 1px;
+	border-color:black;
+	border-bottom-style:solid;
+	margin-top:10px;
+}
+
+.linklist {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+
+.linklist div{
+	display:inline;
+	margin-right: 10px;
+}
+

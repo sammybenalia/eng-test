@@ -1,0 +1,16 @@
+<% if @post.errors %>
+	<% @post.errors.full_messages.each do |msg|%>
+	<%= msg%>
+	<%end%>
+<%end%>
+<%= form_for @post do |p|%>
+<%= p.label :title%><br/>
+<%= p.text_field :title%><br/>
+<%= p.label :content%><br/>
+<%= p.text_area :content%><br/>
+<%= p.label :tags%><br/>
+<%= p.text_field :tags%><br/>
+<%= p.label :featured_image, "Featured Image: "%><br/>
+<%= p.file_field :featured_image%><br/>
+<%= p.submit "Save and Publish"%>
+<% end %>
