@@ -17,3 +17,12 @@
 	margin-right: 10px;
 }
 
+.footer {
+
+	border-top-style: solid;
+	border-width: 1px;
+	border-color:black ;
+}
+.container {
+	min-height: 700px;
+}

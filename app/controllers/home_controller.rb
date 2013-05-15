@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @posts = Post.recent
+    @search = Post.search(params[:q])
+    @posts = @search.result.page(params[:page]).per(2)
     
   end
 end

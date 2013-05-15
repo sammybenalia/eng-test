@@ -1,1 +1,7 @@
-<%= image_tag(@post.featured_image)%>
+<div class="row-fluid">
+	<div class="span12">
+		<h3><%= @post.title%></h3>
+		<%= image_tag(@post.featured_image)%>
+		<p class="entry_text"><%= @post.content%></p>
+	</div>
+</div>

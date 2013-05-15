@@ -33,5 +33,12 @@ class PostsController < BaseController
     end
   end
   
+  def destroy
+    @post = Post.find(params[:id])
+    @post.delete
+    redirect_to admin_posts_path
+  
+  end
+  
 end
 end

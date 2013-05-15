@@ -1,6 +1,9 @@
 Blog::Application.routes.draw do
 
 
+
+
+
   resources :timelines
   resources :users
   resources :sessions
@@ -15,6 +18,7 @@ Blog::Application.routes.draw do
 
   # Sample of regular route:
      match '/login' => 'sessions#new'
+     match '/about' => 'pages#about'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
