@@ -4,6 +4,8 @@
 	border-color:black;
 	border-bottom-style:solid;
 	margin-top:10px;
+	height: 20px;
+
 }
 
 .linklist {
@@ -25,4 +27,61 @@
 }
 .container {
 	min-height: 700px;
+
 }
+#social {
+	position:fixed;
+	top:15px;
+	right: 10px;
+	
+}
+.socialLink {
+	display:block;
+	height: 24px;
+	width: 24px;
+	background-repeat:  no-repeat;
+	padding-top: 10px;
+	
+}
+#facebook{
+	background-image:url('facebook.png');
+}
+#twitter{
+	background-image:url('twitter.png');
+}
+
+#google {
+	background-image:url('google.png');
+}
+
+.headerPost{
+	color: #333333;
+}
+
+.headerPost:hover{
+	color: #333333;
+}
+
+p#like {
+	text-align: right;
+	
+}
+
+.blogList{
+float: left;
+background: white;
+position: fixed;
+top:58px;
+left: 30px;
+display: block;
+width: 100px;
+height: 300px;
+overflow: scroll;
+}
+
+#linkList{
+margin: 0;
+list-style-type: none;
+}
+
+

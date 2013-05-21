@@ -10,7 +10,45 @@
 	padding: 10px 0 0 0 ;
 }
 
-.search_form {
-	display :inline;
+
+#searchIcon {
+float:right;
+position:relative;
+top: 2px;
+}
+
+
+#q_title_cont{
+display: inline-block;
+width: 150px;
+float: right;
+padding: 0;
+margin-bottom: 5px;
+height: 15px;
+border :none;
+border-bottom: 1px dotted black;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+outline: none;
+box-shadow:none;
+display: none;
+direction:rtl
+}
+
+.post_date{
 	float:right;
+}
+.postAuthor h3{
+	padding: 0;
+	padding-top: 10px;
+	margin: 0;
+	line-height: 20px;
+}
+.postAuthor p{
+
+}
+
+.userLink {
+	color: #333333;
 }

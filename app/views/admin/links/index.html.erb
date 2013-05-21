@@ -1,0 +1,26 @@
+<div class="row-fluid">
+	<div class="span2">
+<%= render 'admin/dashboard/navbar'%>	
+	</div>
+	
+	<div class="span10 topPadding">
+		<p><%= link_to "New Link", new_admin_link_path %></p>
+		<table class="table table-bordered table-hover">
+			
+				<th>Title</th>
+				<th>URL<th>
+				<th>Remarks</th>
+				
+				<% @links.each do |c|%>
+				<tr>
+				<td><%=c.title%></td>
+				<td><%= c.url%></td>
+				<td><%= c.remarks%></td>
+				<td><%= link_to "Edit", edit_admin_link_path(c)%></td>
+				<td><%= link_to "Delete", admin_link_path(c), :confirm => 'Are You Sure?', :method => :delete%></td>
+				</tr>
+				<%end%>
+		</table>
+		
+	<div>
+</div>

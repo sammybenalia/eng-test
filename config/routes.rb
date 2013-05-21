@@ -2,23 +2,36 @@ Blog::Application.routes.draw do
 
 
 
-
-
+  resources :contacts
+  match '/contact' => 'contacts#new', as: :contact
+  match '/bloglist' => 'links#index', as: :bloglist
+  
+  match '/authors/:id' => 'users#show', as: :author
+  match '/posts/:id' => 'posts#show', as: :posts
   resources :timelines
+  resources :contacts
   resources :users
   resources :sessions
   namespace :admin do
   resources :posts
   end
+  namespace :admin do 
+    resources :categories
+  end
+  namespace :admin do 
+    resources :links
+  end
   namespace :admin do
     root :to => "dashboard#index"
   end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
      match '/login' => 'sessions#new'
      match '/about' => 'pages#about'
+     match '/mission' => 'pages#mission', as: :mission
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -63,11 +76,13 @@ Blog::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#index'
+   root :to => 'home#index' 
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  
+  get 'categories/:tag', to: 'home#tag', as: :tag
 end

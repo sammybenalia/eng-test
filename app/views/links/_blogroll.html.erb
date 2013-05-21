@@ -1,0 +1,8 @@
+<div class="blogList">
+<h4>Blog List</h4>
+<ol id="linkList">
+<% @blogrolls.each do |b|%>
+<li><%= link_to "#{b.title}", b.url %></li>
+<%end%>
+</ol>
+</div>

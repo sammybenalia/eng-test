@@ -1,9 +1,12 @@
 class Post < ActiveRecord::Base
-  attr_accessible :tags, :title, :content, :featured_image
+  attr_accessible :tags, :title, :content, :featured_image, :tag_list
   has_attached_file :featured_image, :styles => {:medium => "300x300>", :thumb => "100x100>"}, :default_url => "/images/:style/missing.png"
-
+  acts_as_taggable
+  belongs_to :user 
+  extend FriendlyId
+  friendly_id :title, use: [:slugged, :history]
 
   def self.recent
-    self.find(:all, :limit => 10, :order => 'created_at desc')
+    self.find(:all, :limit => 10, :order => 'created_at DESC')
   end
 end

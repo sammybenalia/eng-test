@@ -1,0 +1,16 @@
+<% @contact.errors.full_messages.each do |msg| %>
+  <p><%= msg %></p>
+<% end %>
+
+<%= form_for @contact do |f|%>
+	<%= f.label :name%>
+	<%= f.text_field :name%>
+	<br/>
+	<%= f.label :email%>
+	<%= f.text_field :email%>
+	<br/>
+	<%= f.label :message%>
+	<%= f.text_area :message%>
+	<br/>
+	<%= f.submit "Send" %>
+<%end%>

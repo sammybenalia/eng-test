@@ -1,0 +1,22 @@
+<div class="row-fluid">
+	<div class="span2">
+<%= render 'admin/dashboard/navbar'%>	
+	</div>
+	
+	<div class="span10 topPadding">
+		<p><%= link_to "New Category", new_admin_category_path %></p>
+		<table class="table table-bordered table-hover">
+			
+				<th>Category</th>
+				
+				<% @categories.each do |c|%>
+				<tr>
+				<td><%=c.name%></td>
+				<td><%= link_to "Edit", edit_admin_category_path(c)%></td>
+				<td><%= link_to "Delete", admin_category_path(c), :confirm => 'Are You Sure?', :method => :delete%></td>
+				</tr>
+				<%end%>
+		</table>
+		
+	<div>
+</div>

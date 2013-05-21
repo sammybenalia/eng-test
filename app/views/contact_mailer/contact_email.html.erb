@@ -1,0 +1,13 @@
+!DOCTYPE html>
+html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	  </head>
+	  <body>
+		<h1>New Message from <%= @contact.name%></h1>
+		<p><%= @contact.message%><p><br/>
+		<p><%= @contact.name%><br/>
+		<p><%= @contact.email%><br/>
+		<small>Submitted at <%= @contact.created_at%>
+		</body>
+		</html>

@@ -1,0 +1,6 @@
+<% if defined? @search%>
+		<div class="icon-search" id="searchIcon"></div>
+		<%= search_form_for @search, :url => root_path do |f|%>
+		<%= f.text_field :title_cont%>
+		<%end%>
+<%end%>

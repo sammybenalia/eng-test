@@ -30,6 +30,9 @@ gem 'kaminari'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'cancan'
 gem 'ransack'
+gem 'acts-as-taggable-on'
+gem 'friendly_id'
+gem 'meta-tags', :require => 'meta_tags'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

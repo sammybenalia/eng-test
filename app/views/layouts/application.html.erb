@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+	<%= display_meta_tags :site => "Style isn't Fashion" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+	<%= render 'layouts/social'%>
+		<div id="ajaxLoad"></div>
 <div class="container">
 	
-	<h1>Blog</h1>
+	<h1>STYLE ISN'T FASHION</h1>
 	<%= render 'layouts/navigation_bar'%>
+
 <%= yield %>
 <%= render 'layouts/footer'%>
 </div>
