@@ -1,4 +1,6 @@
-
+<div class="notice">
+<%= flash[:notice]%>
+</div>
 
 <%@posts.each do |post|%>
 
@@ -18,7 +20,7 @@
 <div class="row-fluid">
 	<div class="span12">
 		<p class="entry_text">
-			<%= post.content%>
+			<%= post.content.html_safe%>
 		</p>
 	</div>
 </div>
