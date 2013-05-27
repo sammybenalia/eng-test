@@ -33,6 +33,9 @@ gem 'ransack'
 gem 'acts-as-taggable-on'
 gem 'friendly_id'
 gem 'meta-tags', :require => 'meta_tags'
+gem 'aws-sdk'
+gem 'rack-test'
+gem 'google-analytics-rails'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

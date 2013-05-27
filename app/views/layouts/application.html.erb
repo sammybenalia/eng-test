@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%= display_meta_tags :site => "Style isn't Fashion" %>
+	<%= display_meta_tags :site => "Untitled Art Blog" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+<%= analytics_init :local => Rails.env.development? %>
 </head>
 <body>
 
@@ -12,7 +13,7 @@
 		<div id="ajaxLoad"></div>
 <div class="container">
 	
-	<h1>STYLE ISN'T FASHION</h1>
+	<a class="siteTitle" href="/"><h1>UNTITLED ART BLOG</h1></a>
 	<%= render 'layouts/navigation_bar'%>
 
 <%= yield %>

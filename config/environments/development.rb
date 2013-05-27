@@ -14,7 +14,7 @@ Blog::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
@@ -34,4 +34,13 @@ Blog::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => "stylewebsite",
+      :access_key_id => "AKIAJNTRRIMQ5GVQFTSQ",
+      :secret_access_key => "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"
+    }
+  }
+  GA.tracker = "UA-26102589-1"
 end

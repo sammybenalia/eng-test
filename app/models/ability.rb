@@ -4,6 +4,7 @@ class Ability
   def initialize(user)
     # Define abilities for the passed in user here. For example:
     #
+      
       user ||= current_user # guest user (not logged in)
       case user.role
       when 'admin'

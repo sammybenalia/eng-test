@@ -1,11 +1,10 @@
-
+<% set_meta_tags :description => @post.description %>
 <div class="entry">
 
 <div class="row-fluid">
 	<div class="span12 postAuthor">
 		<h3><%=@post.title%></h3>	
-		<p><%= @post.user.first_name%></p>
-	</div>
+		<p><%= link_to "#{@post.user.fullname}", author_path(@post.user.username), :class => "userLink"%></p>
 </div>
 <div class="row-fluid">
 	<div class="span12">
@@ -29,3 +28,4 @@
 	</div>
 </div>
 </div>
+<% set_meta_tags :keywords => tag_list(@post)%>

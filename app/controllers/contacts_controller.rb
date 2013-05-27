@@ -1,6 +1,8 @@
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new
+    set_meta_tags :title => "contact"
+    
   end
   def create
     @contact = Contact.new(params[:contact])

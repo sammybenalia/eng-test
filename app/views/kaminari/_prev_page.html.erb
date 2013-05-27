@@ -8,4 +8,5 @@
 -%>
 <span class="prev">
   <%= link_to_unless current_page.first?, raw(t 'views.pagination.previous'), url, :rel => 'prev', :remote => remote %>
+	<% set_meta_tags :prev => request.protocol+request.host_with_port+url%>
 </span>
