@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   end
   
   def show
-    @user = User.find(params[:id])
+    @user = User.find(params[:id]) #need to fix
     @search = Post.search(params[:q])
     @results = @search.result.order("created_at DESC").page(params[:page]).per(2)
     @posts = @results.where(" user_id = ?", @user.id)

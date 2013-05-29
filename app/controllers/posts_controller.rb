@@ -8,7 +8,7 @@ class PostsController < ApplicationController
       set_meta_tags :title => @post.title
       set_meta_tags :og => {
         :title => @post.title,
-        :type => 'news.reads',
+        :type => 'article',
         :url => request.protocol+request.host_with_port+posts_path(@post),
         :image => @post.featured_image.url
       }
