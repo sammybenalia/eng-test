@@ -37,6 +37,7 @@ gem 'aws-sdk'
 gem 'rack-test'
 gem 'google-analytics-rails'
 gem 'sitemap_generator'
+gem 'pg', :group => :production
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
