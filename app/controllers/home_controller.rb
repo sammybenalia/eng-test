@@ -4,6 +4,7 @@ class HomeController < ApplicationController
     @posts = @search.result.order("created_at DESC").page(params[:page]).per(4)
     if params[:page]
     @url = "/?page="+params[:page]
+    
   end
     
   end
