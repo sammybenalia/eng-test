@@ -24,7 +24,9 @@ Blog::Application.routes.draw do
   namespace :admin do
     root :to => "dashboard#index"
   end
-
+  match '/404' => "errors#not_found"
+  match "/422" => "errors#not_found"
+  match '/500' => "errors#not_found"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
