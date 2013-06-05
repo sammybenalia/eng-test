@@ -3,7 +3,7 @@ module Admin
 class PostsController < BaseController
   load_and_authorize_resource
   def index
-    @posts = Post.all
+    @posts = Post.order("id DESC").all
   end
   def show
     @post = Post.find(params[:id])
