@@ -22,7 +22,13 @@
 <div class="row-fluid">
 	<div class="span12">
 		<p class="entry_text">
-			<%= post.content.html_safe%>
+			<%=raw truncate(post.content.html_safe,  
+			                :length => 0, 
+			                :separator => '[---MORE---]', 
+			                :omission => link_to( "Read More", posts_path(post))) %>
+		
+
+			
 		</p>
 	</div>
 </div>
