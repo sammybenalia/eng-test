@@ -18,7 +18,7 @@
 <div class="row-fluid">
 	<div class="span12">
 		<p class="entry_text">
-			<%=raw (@post.content.html_safe).gsub("[---MORE---]", '') %>
+			<%=@post.content.html_safe %>
 		
 		</p>
 	</div>
