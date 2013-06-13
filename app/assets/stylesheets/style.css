@@ -88,4 +88,11 @@ list-style-type: none;
 	width: 100%;
 	background-color: #B1FAAA;
 }
-
+.image_caption {
+	text-align: left;
+	padding: none;
+	margin: none;
+	width: 100%;
+	font-size: 12px;
+	color: #787576;
+}

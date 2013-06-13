@@ -17,9 +17,11 @@
 <%= p.label :tag_list, "Tags"%><br/>
 <%= p.text_field :tag_list%><br/>
 <%= p.label :description%> 160 Characters Max<br/>
-<%= p.text_area :description, :size => "5x10"%><br/>
+<%= p.text_area :description, :size => "5x10"%> <span id="count">Characters Remaining: </span><br/>
 <%= p.label :featured_image, "Featured Image: "%><br/>
 <%= p.file_field :featured_image%><br/>
+<%= p.label :caption, "Photo Caption: "%><br/>
+<%= p.text_field :caption%><br/>
 <%= p.submit "Save and Publish"%>
 <% end %>
 </div>

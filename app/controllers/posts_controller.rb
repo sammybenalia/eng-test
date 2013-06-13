@@ -13,7 +13,10 @@ class PostsController < ApplicationController
         :image => @post.featured_image.url
       }
       set_meta_tags :twitter => {
-        :card => "summary_large_image",
+        :card => "summary",
+        :title => @post.title, 
+        :site => "@untitledartblog",
+        :description => @post.description,
         :image => @post.featured_image.url(:twitter)
         #remove host part when upload to server
         #have to add description value

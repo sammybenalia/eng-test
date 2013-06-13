@@ -10,6 +10,9 @@
 <div class="row-fluid">
 	<div class="span12">
 		<%=image_tag(@post.featured_image)%>
+		<div class="image_caption">
+			<%= @post.caption %>
+		</div>
 	</div>
 </div>
 <div class="row-fluid">

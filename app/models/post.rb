@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  attr_accessible :tags, :title, :content, :featured_image, :tag_list, :description
+  attr_accessible :tags, :title, :content, :featured_image, :tag_list, :description, :caption
   has_attached_file :featured_image, :styles => {:medium => "300x300>", :twitter => "280x150>"}, :default_url => "/images/:style/missing.png"
   acts_as_taggable
   belongs_to :user 
