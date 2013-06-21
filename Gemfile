@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', :group => :development
-gem 'newrelic_rpm'
+
 gem 'paperclip'
 
 # Gems used only for assets and not required
@@ -38,7 +38,8 @@ gem 'rack-test'
 gem 'google-analytics-rails'
 gem 'sitemap_generator'
 gem 'pg', :group => :production
-
+gem 'newrelic_rpm'
+gem 'ey_config'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
