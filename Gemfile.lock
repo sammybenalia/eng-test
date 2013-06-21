@@ -53,6 +53,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ey_config (0.0.6)
     friendly_id (4.0.9)
     google-analytics-rails (0.0.4)
     hike (1.2.2)
@@ -160,6 +161,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   cancan
   coffee-rails (~> 3.2.1)
+  ey_config
   friendly_id
   google-analytics-rails
   jquery-rails
