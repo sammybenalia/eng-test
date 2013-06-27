@@ -13,6 +13,7 @@
 		<p><%= link_to "#{post.user.fullname}", author_path(post.user.username), :class => "userLink"%></p>
 	</div>
 </div>
+<%if post.featured_image.exists?  %>
 <div class="row-fluid">
 	<div class="span12">
 		<%= link_to image_tag(post.featured_image), posts_path(post) %>
@@ -21,6 +22,7 @@
 		</div>
 	</div>
 </div>
+<%end%>
 <div class="row-fluid">
 	<div class="span12">
 		<p class="entry_text">
