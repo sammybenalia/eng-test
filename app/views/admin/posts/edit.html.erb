@@ -16,5 +16,8 @@
 <%= p.file_field :featured_image%><br/>
 <%= p.label :caption, "Photo Caption: "%><br/>
 <%= p.text_field :caption%><br/>
+
+Publish: <%= p.check_box :published%><br/>
+Publish Later: <%= p.date_select :publish_time %> Time: <%= p.time_select :publish_time, :ignore_date => true%><br/>
 <%= p.submit "Save and Publish"%>
 <% end %>

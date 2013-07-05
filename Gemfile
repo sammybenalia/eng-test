@@ -40,6 +40,7 @@ gem 'sitemap_generator'
 gem 'pg', :group => :production
 gem 'newrelic_rpm'
 gem 'ey_config'
+gem 'whenever', :require => false
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
