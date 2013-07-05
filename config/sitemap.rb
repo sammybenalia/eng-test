@@ -3,7 +3,7 @@ SitemapGenerator::Sitemap.default_host = "http://untitledartblog.com"
 
 SitemapGenerator::Sitemap.create do
   add '/mission'
-  Post.find_each do |post|
+  Post.published.each do |post|
     add posts_path(post), :lastmod => post.updated_at
   end
   User.find_each do |author|
